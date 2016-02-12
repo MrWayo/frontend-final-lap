@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Reto Final Materialize Front-End</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<link rel="stylesheet" href="mtz/materialize.min.css" media="screen,projection">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+		<nav class="blue-grey darken-3">
+		  <div class="nav-wrapper">
+		    <a href="" class="brand-logo">Blog de Ciencia</a>
+		    <ul id="nav-mobile" class="right hide-on-med-and-down">
+		      <li><a href="">Acerca del Blog</a></li>
+		      <li><a href="">Ártículos<span class="new badge">23!</span></a></li>
+		    </ul>
+		  </div>
+		</nav>
+	</header>
+	<div class="row">
+		<div class="col s3 m3 l3">		
+			 <h6>Menú del blog</h6>
+			 <ul class="collapsible">
+			 	<li class="active
+			 	">
+			 		<div class="collapsible-header"><i class="mdi-av-web"></i>Física</div>
+			 		<div class="collapsible-body">
+			 			<p><a href="#boson">El Bosón de Higgs</a> ,
+			 			<a href="">El acelerador de partículas</a> ,
+			 			<a href="">El gravitón</a></p>
+			 		</div>
+			 	</li>
+			 	<li>
+			 		<div class="collapsible-header"><i class="mdi-av-web"></i>Ingeniería Planetaria</div>
+			 		<div class="collapsible-body">
+			 			<p><a href="">El ingeniero planetario</a> ,
+			 			<a href="#terra">La terraformación</a> ,
+			 			<a href="">Planetas artificiales</a></p>
+			 		</div>
+			 	</li>
+			 	<li>
+			 		<div class="collapsible-header"><i class="mdi-av-web"></i>Biotecnología</div>
+			 		<div class="collapsible-body">
+			 			<p><a href="">Hacer aprender a las células</a> ,
+			 			<a href="">Androides</a> ,
+			 			<a href="">Órganos sintéticos</a></p>
+			 		</div>
+			 	</li>
+			 </ul>
+			 <div id="tar" class="card deep-orange darken-4">
+			 	<div class="card-content white-text" >
+			 		<h4>El astronauta</h4>
+			 	    <img src="img/astron.png" width="100" height="100">
+			 		<p>Un luchador espacial que ama el universo, las nebulosas, las estrellas, ama simplemente el hecho de estar allí afuera observando la Tierra desde esa ínfima oscuridad de materia oscura.</p>
+			 		<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Suscríbete</a>
+			 	</div>
+			 </div>
+		</div>
+		<div class="col s9 m9 l9">
+			<main>
+				<article id="boson">
+				    <div class="card blue-grey darken-3">
+					    <div class="card-content white-text">
+							<header>
+							<h4 align="center">El Bosón de Higgs</h4>
+							<time>9-02-2016</time>	
+							</header>
+							<!--Tarjeta con Imagen-->
+						      
+						          <div class="card">
+						            <div class="card-image">
+						              <img src="img/higgs.jpg">
+						              <span class="card-title">Recreación gráfica de un Bosón</span>
+						            </div>
+						           
+						            <div class="card-action">
+						              <a href="https://es.wikipedia.org/wiki/Bos%C3%B3n_de_Higgs">Ver en Wikipedia</a>
+						            </div>
+						          </div>
+						      
+		                    <p>El bosón de Higgs o partícula de Higgs es una partícula elemental propuesta en el Modelo estándar de física de partículas. Recibe su nombre en honor a Peter Higgs quien, junto con otros, propuso en 1964 el hoy llamado mecanismo de Higgs para explicar el origen de la masa de las partículas elementales. El Bosón de Higgs constituye el cuanto del campo de Higgs, (la más pequeña excitación posible de este campo). Según el modelo propuesto, no posee espín, carga eléctrica o color, es muy inestable y se desintegra rápidamente, su vida media es del orden del zeptosegundo. En algunas variantes del Modelo estándar puede haber varios bosones de Higgs.</p>
+		                
+							<footer><a href="">a1</a> | <a href="">a2</a> | <a href="">a3</a></footer>
+                    	</div>
+                    </div>
+					<article>
+						<div class="card blue-grey darken-3">
+							<div class="card-content white-text">
+								<h4>Comentarios</h4>
+								<hr>
+								<!--Comentario 1-->
+								<div class="card-panel teal">
+         							 <span class="white-text">
+         							 	<time>Escrito el 9-02-2016 a las 7:35 a.m.</time>
+										<p>Comentario 1 sobre el artículo</p>
+										<p>Toda la información lo sacaste de la wikipedia, no hiciste mayor trabajo.</p>
+         							 </span>
+        						</div>
+        						<hr>
+								<!--Comentario 2-->
+								<div class="card-panel teal">
+         							 <span class="white-text">
+         							 	<time>Escrito el 9-02-2016 a las 7:35 a.m.</time>
+										<p>Comentario 2 sobre el artículo</p>
+										<p>Gracias por la info la necesitaba para mi tarea.</p>
+         							 </span>
+        						</div>
+								<input type="text" placeholder="Comenta aquí">
+								<input type="button" class="btn waves-effect waves-light" value="Comentar">
+								
+							</div>
+						</div>
+						<!--Suscribete con tarjeta-->
+						<div class="card blue-grey darken-3">
+							<div class="card-content white-text">
+								<!--Form Suscribete-->
+								<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Suscríbete para acceder a más contenido</a>
+								  <div id="modal1" class="modal">
+								    <div class="modal-content">
+								            <div class="row">
+										        <div class="input-field col s6">
+										          <input id="first_name" type="text" class="validate">
+										          <label for="first_name">Nombres</label>
+										        </div>
+										        <div class="input-field col s6">
+										          <input id="last_name" type="text" class="validate">
+										          <label for="last_name">Apellidos</label>
+										        </div>
+										    </div>
+										    <div class="input-field col s12">
+										          <input id="email" type="email" class="validate">
+										          <label for="email" data-error="wrong" data-success="right">Correo Electrónico</label>  
+										    </div>
+										    <div class="input-field col s12">
+										          <input id="phone" type="email" class="validate">
+										          <label for="phone" data-error="wrong" data-success="right">Teléfono</label>
+										    </div>
+								    </div>
+								    <div class="modal-footer">
+								      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
+								      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Enviar</a>
+								    </div>
+								  </div>
+							</div>
+						</div>
+						<!--Fin Suscribete con tarjeta-->
+					</article>
+					  
+				</article>
+
+				<article id="terra">
+				    <div class="card blue-grey darken-3">
+					    <div class="card-content white-text">
+							<header>
+							<h4 align="center">La terraformación</h4>
+							<time>9-02-2016</time>	
+							</header>
+							<!--Tarjeta con Imagen-->
+						      
+						          <div class="card">
+						            <div class="card-image">
+						              <img src="img/terraformar.jpg">
+						              <span class="card-title">Recreación gráfica de la vida en  marte a través de biocámaras especiales</span>
+						            </div>
+						           
+						            <div class="card-action">
+						              <a href="https://es.wikipedia.org/wiki/Terraformaci%C3%B3n">Ver en Wikipedia</a>
+						            </div>
+						          </div>
+						      
+		                    <p>Paralelo a su uso en la ficción, la ciencia adoptó el término respecto de las numerosas proposiciones teóricas para, eventualmente, colonizar otros planetas adecuando sus condiciones para la vida terrestre. Carl Sagan, astrónomo y divulgador científico, propuso aplicar la ingeniería planetaria a Venus en un artículo publicado en la revista Science 1961 y titulado "The Planet Venus". Sagan imaginó plantar la atmósfera de Venus con algas, que absorberían el dióxido de carbono y reducirían el efecto invernadero hasta que la temperatura de la superficie cayese a niveles confortables.8 Posteriores descubrimientos sobre las condiciones de Venus hicieron este enfoque imposible. El estudio reflejaba que el planeta tiene demasiada atmósfera que procesar y fijar; e incluso si las algas atmosféricas pudieran prosperar en el ambiente árido y hostil de la alta atmósfera de Venus, todo el carbono que se fijara en forma orgánica sería liberado como dióxido de carbono tan pronto como cayera a las calientes regiones inferiores.</p>
+		                
+							<footer><a href="">a1</a> | <a href="">a2</a> | <a href="">a3</a></footer>
+                    	</div>
+                    </div>
+					<article>
+						<div class="card blue-grey darken-3">
+							<div class="card-content white-text">
+								<h4>Comentarios</h4>
+								<hr>
+								<!--Comentario 1-->
+								<div class="card-panel teal">
+         							 <span class="white-text">
+         							 	<time>Escrito el 9-02-2016 a las 6:45 p.m.</time>
+										<p>Comentario 1 sobre el artículo</p>
+										<p>Insisto toda la info la sacaste de la wiki.</p>
+         							 </span>
+        						</div>
+        						<hr>
+								<!--Comentario 2-->
+								<div class="card-panel teal">
+         							 <span class="white-text">
+         							 	<time>Escrito el 9-02-2016 a las 9:32 p.m.</time>
+										<p>Comentario 2 sobre el artículo</p>
+										<p>Interesante la info también la necesitaba para mi tarea.</p>
+         							 </span>
+        						</div>
+        						<!--Comentario 2-->
+								<div class="card-panel teal">
+         							 <span class="white-text">
+         							 	<time>Escrito el 9-02-2016 a las 10:12 p.m.</time>
+										<p>Comentario 3 sobre el artículo</p>
+										<p>Para el comentario 1, solo vienes a criticar, acaso no te cansas?</p>
+         							 </span>
+        						</div>
+								<input type="text" placeholder="Comenta aquí">
+								<input type="button" class="btn waves-effect waves-light" value="Comentar">
+							</div>
+						</div>
+						<!--Suscribete con tarjeta-->
+						<div class="card blue-grey darken-3">
+							<div class="card-content white-text">
+								<!--Form Suscribete-->
+								<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Suscríbete para acceder a más contenido</a>
+								  <div id="modal1" class="modal">
+								    <div class="modal-content">
+								            <div class="row">
+										        <div class="input-field col s6">
+										          <input id="first_name" type="text" class="validate">
+										          <label for="first_name">Nombres</label>
+										        </div>
+										        <div class="input-field col s6">
+										          <input id="last_name" type="text" class="validate">
+										          <label for="last_name">Apellidos</label>
+										        </div>
+										    </div>
+										    <div class="input-field col s12">
+										          <input id="email" type="email" class="validate">
+										          <label for="email" data-error="wrong" data-success="right">Correo Electrónico</label>  
+										    </div>
+										    <div class="input-field col s12">
+										          <input id="phone" type="email" class="validate">
+										          <label for="phone" data-error="wrong" data-success="right">Teléfono</label>
+										    </div>
+								    </div>
+								    <div class="modal-footer">
+								      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Cancelar</a>
+								      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Enviar</a>
+								    </div>
+								  </div>
+							</div>
+						</div>
+						<!--Fin Suscribete con tarjeta-->
+					</article>
+				</article>
+
+			</main>
+		</div>
+	</div>
+
+	<footer class="page-footer blue-grey darken-3">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Blog personal sobre ciencia</h5>
+                <p class="grey-text text-lighten-4">Si te gustó el contenido del blog no dudes en comentar estaré agradecido.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Enlaces interesantes</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Visita mi web personal</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Acerca de...</a></li>
+                  <li><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Suscríbete</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">© 2016 Copyright WayoSapiens</div>
+          </div>
+        </footer>
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="mtz/materialize.min.js"></script>
+	<script src="js/modal.js"></script>		
+</body>
+</html>
